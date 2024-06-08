@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11ebce7c-9d86-401f-842e-ade358bc2d29" name="Changes" comment="Adding entity movement and code commentary">
+    <list default="true" id="11ebce7c-9d86-401f-842e-ade358bc2d29" name="Changes" comment="Adding a health bar">
+      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Trail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/BasicEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/BasicEnemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/HUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/HUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/ID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717854594305</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adding a health bar">
+      <created>1717861444437</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717861444437</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,6 +128,7 @@
     <MESSAGE value="Making the player" />
     <MESSAGE value="Making the main player" />
     <MESSAGE value="Adding entity movement and code commentary" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding entity movement and code commentary" />
+    <MESSAGE value="Adding a health bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding a health bar" />
   </component>
 </project>
