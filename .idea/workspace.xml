@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11ebce7c-9d86-401f-842e-ade358bc2d29" name="Changes" comment="Creating game &quot;DodgeAndLast&quot;">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/GameObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/ID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Window.java" afterDir="false" />
+    <list default="true" id="11ebce7c-9d86-401f-842e-ade358bc2d29" name="Changes" comment="setting up Jframe, Game Objects, Handlers">
+      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/ID.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -72,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717679550818</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="setting up Jframe, Game Objects, Handlers">
+      <created>1717807353945</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717807353945</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,6 +91,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creating game &quot;DodgeAndLast&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating game &quot;DodgeAndLast&quot;" />
+    <MESSAGE value="setting up Jframe, Game Objects, Handlers" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting up Jframe, Game Objects, Handlers" />
   </component>
 </project>

@@ -2,6 +2,7 @@ package com.DodgeAndLast;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
+import java.util.Random;
 
 public class Game extends Canvas implements Runnable{
 
@@ -10,8 +11,20 @@ public class Game extends Canvas implements Runnable{
     private Thread thread;
     private boolean running = false;
 
+    private Handler handler;
+    private Random r;
+
     public Game(){
+
+        handler = new Handler();
+
         new Window(width, height, "DodgeAndLast", this);
+
+        r = new Random();
+
+        for (int i = 0; i <50; i++){
+        handler.addObject(new Player(width / 2 - 32, height / 2 - 32, ID.Player));
+        }
     }
     public synchronized void start(){
         thread = new Thread(this);
@@ -60,7 +73,7 @@ public class Game extends Canvas implements Runnable{
 
 
     private void tick(){
-
+        handler.tick();
     }
 
     private void render(){
@@ -74,6 +87,7 @@ public class Game extends Canvas implements Runnable{
 
         g.setColor(Color.black);
         g.fillRect(0, 0 ,width, height);
+        handler.render(g);
         g.dispose();
         bs.show();
     }
