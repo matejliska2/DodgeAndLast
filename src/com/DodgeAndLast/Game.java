@@ -12,6 +12,7 @@ public class Game extends Canvas implements Runnable{
     private boolean running = false;
 
     private Handler handler;
+    private HUD hud;
     private Random r;
 
     public Game(){
@@ -21,12 +22,16 @@ public class Game extends Canvas implements Runnable{
 
         new Window(width, height, "DodgeAndLast", this);
 
+        hud = new HUD();
+
         r = new Random();
 
-        for (int i = 0; i <50; i++){
+        handler.addObject(new BasicEnemy(r.nextInt(width), r.nextInt(height), ID.BasicEnemy));
+
         handler.addObject(new Player(width / 2 - 32, height / 2 - 32, ID.Player));
-        }
+
     }
+
     public synchronized void start(){
         thread = new Thread(this);
         thread.start();
@@ -45,6 +50,8 @@ public class Game extends Canvas implements Runnable{
     // this is a known game loop not made by me !!
     @Override
     public void run() {
+        //focus on the executed window on run
+        this.requestFocus();
         long lastTime = System.nanoTime();
         double amountOfTicks = 60.0;
         double ns = 1000000000 / amountOfTicks;
@@ -77,6 +84,7 @@ public class Game extends Canvas implements Runnable{
         handler.tick();
     }
 
+    // render for the color of the window
     private void render(){
         BufferStrategy bs = this.getBufferStrategy();
         if (bs == null){
@@ -88,11 +96,25 @@ public class Game extends Canvas implements Runnable{
 
         g.setColor(Color.black);
         g.fillRect(0, 0 ,width, height);
+
         handler.render(g);
+
+        hud.render(g);
+
         g.dispose();
         bs.show();
     }
 
+    // setting border for the entities so that they don´t go out of bounds
+    public static int clamp(int var, int min, int max){
+        if (var >= max)
+            return var = max;
+        else if (var <= min)
+            return var = min;
+        else return var;
+    }
+
+    // runs the game
     public static void main(String args[]){
         new Game();
     }

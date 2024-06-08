@@ -1,12 +1,13 @@
 package com.DodgeAndLast;
 
-import com.DodgeAndLast.Game;
-
 import javax.swing.*;
 import java.awt.*;
 
 public class Window extends Canvas {
+
     private static final long serialVersionUID = 2142011214743414861L;
+
+    // JFrame window setup
     public Window(int width, int height, String title, Game game){
         JFrame frame = new JFrame(title);
 
