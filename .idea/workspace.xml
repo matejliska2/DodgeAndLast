@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11ebce7c-9d86-401f-842e-ade358bc2d29" name="Changes" comment="Making the main player">
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/BasicEnemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/HUD.java" afterDir="false" />
+    <list default="true" id="11ebce7c-9d86-401f-842e-ade358bc2d29" name="Changes" comment="Adding entity movement and code commentary">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/ID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/KeyInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/KeyInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/HUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/HUD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717819047270</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding entity movement and code commentary">
+      <created>1717854594305</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717854594305</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +116,7 @@
     <MESSAGE value="setting up Jframe, Game Objects, Handlers" />
     <MESSAGE value="Making the player" />
     <MESSAGE value="Making the main player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Making the main player" />
+    <MESSAGE value="Adding entity movement and code commentary" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding entity movement and code commentary" />
   </component>
 </project>

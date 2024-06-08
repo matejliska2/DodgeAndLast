@@ -10,11 +10,17 @@ public class HUD {
     public static int health = 100;
 
     public void tick(){
+        health--;
 
+        health = Game.clamp(health, 0, 100);
     }
 
     public void render(Graphics g){
-        g.setColor(Color.gray);
-        g.fillRect(Game.width / 2 - 125, 10, 250, 30);
+        g.setColor(Color.red);
+        g.fillRect(Game.width / 2 - 100, 10, 200, 30);
+        g.setColor(Color.green);
+        g.fillRect(Game.width / 2 - 100, 10, health * 2, 30);
+        g.setColor(Color.white);
+        g.drawRect(Game.width / 2 - 100, 10, 200, 30);
     }
 }

@@ -50,8 +50,10 @@ public class Game extends Canvas implements Runnable{
     // this is a known game loop not made by me !!
     @Override
     public void run() {
+
         //focus on the executed window on run
         this.requestFocus();
+
         long lastTime = System.nanoTime();
         double amountOfTicks = 60.0;
         double ns = 1000000000 / amountOfTicks;
@@ -82,6 +84,7 @@ public class Game extends Canvas implements Runnable{
 
     private void tick(){
         handler.tick();
+        hud.tick();
     }
 
     // render for the color of the window
