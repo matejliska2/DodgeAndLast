@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11ebce7c-9d86-401f-842e-ade358bc2d29" name="Changes" comment="Adding a health bar">
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Trail.java" afterDir="false" />
+    <list default="true" id="11ebce7c-9d86-401f-842e-ade358bc2d29" name="Changes" comment="Adding a trail to enemies and the player, &quot;making collisions&quot;">
+      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/HFastEnemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Spawn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/VFastEnemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/BasicEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/BasicEnemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/HUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/HUD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/ID.java" afterDir="false" />
@@ -108,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717861444437</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adding a trail to enemies and the player, &quot;making collisions&quot;">
+      <created>1717887869718</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717887869718</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +137,7 @@
     <MESSAGE value="Making the main player" />
     <MESSAGE value="Adding entity movement and code commentary" />
     <MESSAGE value="Adding a health bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding a health bar" />
+    <MESSAGE value="Adding a trail to enemies and the player, &quot;making collisions&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding a trail to enemies and the player, &quot;making collisions&quot;" />
   </component>
 </project>

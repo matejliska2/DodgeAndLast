@@ -10,10 +10,10 @@ public class Game extends Canvas implements Runnable{
     public static final int width = 640, height = width / 12 * 9;
     private Thread thread;
     private boolean running = false;
-
+    private Random r;
     private Handler handler;
     private HUD hud;
-    private Random r;
+    private Spawn spawner;
 
     public Game(){
 
@@ -24,11 +24,11 @@ public class Game extends Canvas implements Runnable{
 
         hud = new HUD();
 
+        spawner = new Spawn(handler, hud);
+
         r = new Random();
 
-        for (int i = 0; i < 5; i++) {
-            handler.addObject(new BasicEnemy(r.nextInt(width), r.nextInt(height), ID.BasicEnemy, handler));
-        }
+        handler.addObject(new BasicEnemy(r.nextInt(Game.width -50), r.nextInt(Game.height - 50), ID.BasicEnemy, handler));
 
         handler.addObject(new Player(width / 2 - 32, height / 2 - 32, ID.Player, handler));
 
@@ -87,6 +87,7 @@ public class Game extends Canvas implements Runnable{
     private void tick(){
         handler.tick();
         hud.tick();
+        spawner.tick();
     }
 
     // render for the color of the window
