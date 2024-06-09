@@ -21,7 +21,8 @@ public class Player extends GameObject{
 
             GameObject tempObject = handler.object.get(i);
 
-            if (tempObject.getId() == ID.BasicEnemy || tempObject.getId() == ID.VFastEnemy || tempObject.getId() == ID.HFastEnemy){
+            if (tempObject.getId() == ID.BasicEnemy || tempObject.getId() == ID.VFastEnemy || tempObject.getId() == ID.HFastEnemy
+            || tempObject.getId() == ID.SideBoss || tempObject.getId() == ID.SideBoss2 || tempObject.getId() == ID.SideBullet){
                 if(getBounds().intersects(tempObject.getBounds())){
                     HUD.health -= 2;
                 }

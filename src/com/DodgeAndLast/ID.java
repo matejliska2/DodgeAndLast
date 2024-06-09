@@ -6,5 +6,9 @@ public enum ID {
     BasicEnemy(),
     HFastEnemy(),
     VFastEnemy(),
+    SideBoss(),
+    SideBoss2(),
+    SideBullet(),
+    SideBullet2(),
     Trail()
 }
