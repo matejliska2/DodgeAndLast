@@ -86,7 +86,7 @@ public class Menu extends MouseAdapter {
 
             g.setFont(font);
             g.setColor(Color.white);
-            g.drawString("Menu", (Game.width / 2) - 65, 60);
+            g.drawString("Dodge And Last", (Game.width / 2) - 65, 60);
 
             g.setFont(font2);
             g.setColor(Color.white);

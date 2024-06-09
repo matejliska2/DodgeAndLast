@@ -1,30 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11ebce7c-9d86-401f-842e-ade358bc2d29" name="Changes" comment="Sorting out waves">
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/BasicEnemyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/GameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/HFastEnemyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/HUDTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/KeyInputTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/MenuTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/PlayerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/SideBoss2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/SideBossTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/SideBullet2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/SideBulletTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/SpawnTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/TrailTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/VFastEnemyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/WindowTest.java" afterDir="false" />
+    <list default="true" id="11ebce7c-9d86-401f-842e-ade358bc2d29" name="Changes" comment="Making a menu and unit tests for everything">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DodgeAndLast.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DodgeAndLast.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/BasicEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/BasicEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/SideBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/SideBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/Trail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Trail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,22 +40,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "D:/Programovani/Editory/IntelliJ IDEA Community Edition 2022.2.3/DodgeAndLast",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programovani/Editory/IntelliJ IDEA Community Edition 2022.2.3/DodgeAndLast&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -178,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717949011793</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Making a menu and unit tests for everything">
+      <created>1717961313294</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717961313294</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +190,7 @@
     <MESSAGE value="Finally fixed movement" />
     <MESSAGE value="Making the first boss fight" />
     <MESSAGE value="Sorting out waves" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sorting out waves" />
+    <MESSAGE value="Making a menu and unit tests for everything" />
+    <option name="LAST_COMMIT_MESSAGE" value="Making a menu and unit tests for everything" />
   </component>
 </project>
