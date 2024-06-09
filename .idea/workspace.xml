@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11ebce7c-9d86-401f-842e-ade358bc2d29" name="Changes" comment="Adding a trail to enemies and the player, &quot;making collisions&quot;">
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/HFastEnemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Spawn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/VFastEnemy.java" afterDir="false" />
+    <list default="true" id="11ebce7c-9d86-401f-842e-ade358bc2d29" name="Changes" comment="Adding score, levels and new types of enemies and their spawner">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/HUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/HUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/ID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DodgeAndLast/KeyInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DodgeAndLast/KeyInput.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717887869718</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adding score, levels and new types of enemies and their spawner">
+      <created>1717939271924</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717939271924</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +139,7 @@
     <MESSAGE value="Adding entity movement and code commentary" />
     <MESSAGE value="Adding a health bar" />
     <MESSAGE value="Adding a trail to enemies and the player, &quot;making collisions&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding a trail to enemies and the player, &quot;making collisions&quot;" />
+    <MESSAGE value="Adding score, levels and new types of enemies and their spawner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding score, levels and new types of enemies and their spawner" />
   </component>
 </project>
