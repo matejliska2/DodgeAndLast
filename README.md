@@ -11,4 +11,4 @@ Of course with the rising score and level the enemies are spawned more frequentl
 
 Every 10 levels there is a different boss waiting for you.
 
-Enjoy
+Enjoy.
