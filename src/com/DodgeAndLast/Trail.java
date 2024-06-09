@@ -4,10 +4,10 @@ import java.awt.*;
 
 public class Trail extends GameObject{
 
-    private float alpha = 1;
+    float alpha = 1;
     private Handler handler;
     private int width, height;
-    private float life;
+    float life;
     private Color color;
 
     public Trail(int x, int y, ID id,Color color, int width, int height, float life, Handler handler) {

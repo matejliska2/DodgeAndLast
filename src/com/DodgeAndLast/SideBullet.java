@@ -8,8 +8,8 @@ public class SideBullet extends GameObject{
     private Handler handler;
     Random r = new Random();
 
-    private int height = r.nextInt(35);
-    private int width = r.nextInt(35);
+    private int height = r.nextInt(50);
+    private int width = r.nextInt(50);
 
     // velocity / movement of the boss bullets
     public SideBullet(int x, int y, ID id, Handler handler) {

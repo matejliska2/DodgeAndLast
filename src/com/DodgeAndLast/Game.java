@@ -11,26 +11,42 @@ public class Game extends Canvas implements Runnable{
     private Thread thread;
     private boolean running = false;
     private Random r;
-    private Handler handler;
-    private HUD hud;
-    private Spawn spawner;
+    Handler handler;
+    HUD hud;
+    Spawn spawner;
+
+    Menu menu;
+
+    public enum State{
+        Menu,
+        Game,
+        Help,
+        End
+    }
+
+    public static State gameState = State.Menu;
 
     public Game(){
 
+        hud = new HUD();
         handler = new Handler();
+        menu = new Menu(this, handler, hud);
         this.addKeyListener(new KeyInput(handler));
+        this.addMouseListener(menu);
 
         new Window(width, height, "DodgeAndLast", this);
 
-        hud = new HUD();
 
         spawner = new Spawn(handler, hud);
 
         r = new Random();
 
-        handler.addObject(new BasicEnemy(r.nextInt(Game.width -50), r.nextInt(Game.height - 50), ID.BasicEnemy, handler));
+        if (gameState == State.Game){
+            handler.addObject(new BasicEnemy(r.nextInt(Game.width -50), r.nextInt(Game.height - 50), ID.BasicEnemy, handler));
 
-        handler.addObject(new Player(width / 2 - 32, height / 2 - 32, ID.Player, handler));
+            handler.addObject(new Player(width / 2 - 32, height / 2 - 32, ID.Player, handler));
+        }
+
 
     }
 
@@ -84,14 +100,27 @@ public class Game extends Canvas implements Runnable{
         }
 
 
-    private void tick(){
+    void tick(){
         handler.tick();
+
+        if (gameState == State.Game){
+
         hud.tick();
         spawner.tick();
+
+        if (hud.health <= 0){
+            hud.health = 100;
+            gameState = State.End;
+            handler.clearEnemies();
+        }
+
+    } else if (gameState == State.Menu || gameState == State.End){
+            menu.tick();
+        }
     }
 
     // render for the color of the window
-    private void render(){
+    void render(){
         BufferStrategy bs = this.getBufferStrategy();
         if (bs == null){
             this.createBufferStrategy(3);
@@ -104,8 +133,11 @@ public class Game extends Canvas implements Runnable{
         g.fillRect(0, 0 ,width, height);
 
         handler.render(g);
-
-        hud.render(g);
+        if(gameState == State.Game){
+            hud.render(g);
+        } else if (gameState == State.Menu || gameState == State.Help || gameState == State.End) {
+            menu.render(g);
+        }
 
         g.dispose();
         bs.show();

@@ -26,7 +26,7 @@ public class BasicEnemy extends GameObject{
         if(y <= 0 || y >= Game.height - 60) velY *= -1;
         if(x <= 0 || x >= Game.width - 33) velX *= -1;
 
-        handler.addObject(new Trail(x, y, ID.Trail, Color.red, 16, 16, 0.02f, handler));
+        handler.addObject(new Trail(x, y, ID.Trail, Color.red, 16, 16, 0.03f, handler));
     }
 
     // color and size of the basic enemy
