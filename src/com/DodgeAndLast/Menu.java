@@ -66,6 +66,7 @@ public class Menu extends MouseAdapter {
 
     }
 
+    // hitboxes for the buttons
     boolean mouseOver(int mx, int my, int x, int y, int width, int height){
         if (mx > x && mx < x + width){
             if (my > y && my < y + height) {
@@ -80,13 +81,14 @@ public class Menu extends MouseAdapter {
 
     public void render(Graphics g){
 
+        // Menu
         if(game.gameState == Game.State.Menu) {
             Font font = new Font("arial", 1, 50);
             Font font2 = new Font("arial", 1, 35);
 
             g.setFont(font);
             g.setColor(Color.white);
-            g.drawString("Dodge And Last", (Game.width / 2) - 65, 60);
+            g.drawString("Menu", (Game.width / 2) - 65, 60);
 
             g.setFont(font2);
             g.setColor(Color.white);
@@ -101,6 +103,7 @@ public class Menu extends MouseAdapter {
             g.drawRect((Game.width / 2) - 100, 320, 200, 75);
             g.drawString("Quit", (Game.width / 2) - 40, 370);
 
+        // help menu
         }else if (game.gameState == Game.State.Help){
             Font font = new Font("arial", 1, 50);
             Font font2 = new Font("arial", 1, 25);
@@ -117,6 +120,8 @@ public class Menu extends MouseAdapter {
             g.setColor(Color.white);
             g.drawRect((Game.width) - 150, 370, 100, 50);
             g.drawString("Back", (Game.width) - 130, 405);
+
+        // end game menu
         }else if (game.gameState == Game.State.End){
         Font font = new Font("arial", 1, 50);
         Font font2 = new Font("arial", 1, 25);
@@ -129,6 +134,7 @@ public class Menu extends MouseAdapter {
         g.setFont(font3);
         g.drawString("You lost with a score of: " + hud.getScore(), (game.width / 2)- 100, 100);
 
+        // try again button
         g.setFont(font2);
         g.setColor(Color.white);
         g.drawRect((Game.width / 2) - 80, 320, 170, 65);

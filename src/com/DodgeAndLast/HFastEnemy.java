@@ -12,7 +12,7 @@ public class HFastEnemy extends GameObject{
         velX = 11;
         velY = 1;
     }
-
+    // hitboxes of the horizontal enemy
     public Rectangle getBounds(){
         return new Rectangle(x, y, 16, 16);
     }

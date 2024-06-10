@@ -25,6 +25,7 @@ public class HUD {
         g.setColor(Color.white);
         g.drawRect(Game.width / 2 - 100, 10, 200, 30);
 
+        // score and level
         g.drawString("Score: " + score, Game.width / 2 - 25, 60);
         g.drawString("Level: " + level, Game.width / 2 - 25, 75);
     }

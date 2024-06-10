@@ -18,7 +18,7 @@ public class SideBullet extends GameObject{
         velX = (r.nextInt(8 - -8) + -8);
         velY = 0;
     }
-
+    // hitbox of the box bullet
     public Rectangle getBounds(){
         return new Rectangle(x, y, width, height);
     }

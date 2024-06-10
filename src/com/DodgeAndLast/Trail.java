@@ -18,7 +18,7 @@ public class Trail extends GameObject{
         this.height = height;
         this.life = life;
     }
-
+    // trail speed
     @Override
     public void tick() {
         if (alpha > life){
@@ -28,7 +28,7 @@ public class Trail extends GameObject{
 
     @Override
     public void render(Graphics g) {
-
+        // trail fading
         Graphics2D g2d = (Graphics2D) g;
         g2d.setComposite(makeTransparent(alpha));
 

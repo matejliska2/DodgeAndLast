@@ -6,7 +6,6 @@ import java.util.Random;
 
 public class Game extends Canvas implements Runnable{
 
-    private static final long serialVersionUID = -1493246767715141082L;
     public static final int width = 640, height = width / 12 * 9;
     private Thread thread;
     private boolean running = false;
@@ -41,9 +40,11 @@ public class Game extends Canvas implements Runnable{
 
         r = new Random();
 
-        if (gameState == State.Game){
-            handler.addObject(new BasicEnemy(r.nextInt(Game.width -50), r.nextInt(Game.height - 50), ID.BasicEnemy, handler));
 
+        if (gameState == State.Game){
+            // basic enemy spawn at the start
+            handler.addObject(new BasicEnemy(r.nextInt(Game.width -50), r.nextInt(Game.height - 50), ID.BasicEnemy, handler));
+            // player spawn at the start
             handler.addObject(new Player(width / 2 - 32, height / 2 - 32, ID.Player, handler));
         }
 

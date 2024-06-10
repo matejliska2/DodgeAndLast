@@ -11,7 +11,7 @@ public class SideBullet2 extends GameObject{
     private int height = r.nextInt(35);
     private int width = r.nextInt(35);
 
-    // velocity / movement of the boss bullets
+    // velocity / movement of the boss bullets2
     public SideBullet2(int x, int y, ID id, Handler handler) {
         super(x, y, id);
         this.handler = handler;
@@ -19,6 +19,7 @@ public class SideBullet2 extends GameObject{
         velY = 0;
     }
 
+    // hitbox of the box bullets2
     public Rectangle getBounds(){
         return new Rectangle(x, y, width, height);
     }
@@ -32,7 +33,7 @@ public class SideBullet2 extends GameObject{
 
     }
 
-    // color and size of the boss bullets
+    // color and size of the boss bullets2
     @Override
     public void render(Graphics g) {
         g.setColor(Color.red);

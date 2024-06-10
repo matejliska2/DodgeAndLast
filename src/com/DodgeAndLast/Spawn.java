@@ -15,12 +15,14 @@ public class Spawn {
     }
 
     public void tick(){
+        // score adding up infinitely as long as player is alive
         scoreKeep++;
 
-        if (scoreKeep >= 250){
+        // every 500 score add a level and reset "scoreKeep"
+        if (scoreKeep >= 500){
             scoreKeep = 0;
             hud.setLevel(hud.getLevel() + 1);
-
+            // spawn enemies accordingly to the level
             if (hud.getLevel() == 2){
                 handler.addObject(new BasicEnemy(r.nextInt(Game.width -50), r.nextInt(Game.height - 50), ID.BasicEnemy, handler));
             }else if (hud.getLevel() == 3){

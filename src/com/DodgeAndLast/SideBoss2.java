@@ -10,14 +10,14 @@ public class SideBoss2 extends GameObject{
 
     public int timer = 20;
 
-    // velocity / movement of the side boss
+    // velocity / movement of the side boss2
     public SideBoss2(int x, int y, ID id, Handler handler) {
         super(x, y, id);
         this.handler = handler;
         velX = -2;
         velY = 0;
     }
-
+    // side boss2 hitbox
     public Rectangle getBounds(){
         return new Rectangle(x, y, 96, 96);
     }

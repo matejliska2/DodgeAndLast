@@ -18,6 +18,7 @@ public class SideBoss extends GameObject{
         velY = 0;
     }
 
+    // side boss hitbox
     public Rectangle getBounds(){
         return new Rectangle(x, y, 96, 96);
     }
